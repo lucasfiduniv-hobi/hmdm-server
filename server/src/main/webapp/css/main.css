@@ -94,10 +94,12 @@
 }
 
 .header .hobi-logo {
-    height: 38px;
-    margin-top: 9px;
+    height: 32px;
+    width: auto;
+    margin-top: 12px;
     margin-left: 12px;
     filter: brightness(0) invert(1);
+    display: block;
 }
 
 .navbar-nav .expiry-warning {
@@ -2483,3 +2485,131 @@ h4.collapse-control {
     overflow-y: scroll;
     max-height: 400px;
 }
+/* ===== SIGH Design System ===== */
+:root {
+    --azul-escuro: #1e2957;
+    --azul-marinho: #101F6B;
+    --azul-claro: #9CBBFC;
+    --cinza-conteudo: #e2e6e7;
+    --cinza-claro: #d8d8d8;
+    --cinza-transparente: #e7e7e7b9;
+    --cinza-escuro: rgb(66, 66, 66);
+    --branco: #fdfdfd;
+    --vermelho: #b22222;
+    --azul-hover: rgba(0, 37, 158, 0.10);
+}
+
+/* Fundo geral apenas nas telas internas (não login) */
+body { background-color: var(--cinza-conteudo) !important; }
+
+/* Scrollbar fino */
+*::-webkit-scrollbar { width: 5px; height: 5px; }
+*::-webkit-scrollbar-track { background: none; }
+*::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,0.28); border-radius: 30px; }
+
+/* Cards / Painéis */
+.panel {
+    border: none !important;
+    border-radius: 6px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.11) !important;
+    background-color: var(--branco) !important;
+    margin-bottom: 16px;
+}
+.panel-default > .panel-heading {
+    background-color: var(--branco) !important;
+    border-bottom: none !important;
+    border-left: 3px solid var(--azul-marinho) !important;
+    border-radius: 6px 6px 0 0 !important;
+    color: var(--cinza-escuro) !important;
+    font-weight: bold;
+    padding: 10px 16px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.panel-body {
+    background-color: var(--branco) !important;
+}
+
+/* Tabelas */
+.table { background-color: var(--branco) !important; }
+.table thead > tr > th {
+    background-color: var(--branco) !important;
+    color: var(--azul-marinho) !important;
+    font-weight: 600;
+    border-bottom: 2px solid var(--cinza-transparente) !important;
+}
+.table tbody > tr > td {
+    vertical-align: middle !important;
+    border-top: 1px solid var(--cinza-transparente) !important;
+    color: var(--cinza-escuro);
+}
+.table-hover tbody tr:hover {
+    background-color: var(--azul-hover) !important;
+}
+tr:hover {
+    background-color: var(--azul-hover) !important;
+}
+
+/* Botões */
+.btn-default {
+    background-color: var(--azul-marinho) !important;
+    color: var(--branco) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+.btn-default:hover, .btn-default:focus {
+    opacity: 0.88;
+    box-shadow: 0 0 10px rgba(0,0,0,0.28) !important;
+    color: var(--branco) !important;
+}
+.btn-default:disabled, .btn-default[disabled] {
+    background-color: var(--cinza-transparente) !important;
+    color: var(--cinza-escuro) !important;
+    opacity: 1 !important;
+}
+.btn-primary {
+    background-color: var(--azul-marinho) !important;
+    border-color: var(--azul-marinho) !important;
+    border-radius: 5px !important;
+}
+.btn-danger  { border-radius: 5px !important; }
+.btn-success { border-radius: 5px !important; }
+.btn-warning { border-radius: 5px !important; }
+
+/* Inputs */
+.form-control {
+    border: 1px solid #22285557 !important;
+    border-radius: 5px !important;
+    color: var(--cinza-escuro) !important;
+}
+.form-control:focus {
+    border-color: var(--azul-claro) !important;
+    box-shadow: 0 0 0 2px rgba(156,187,252,0.30) !important;
+}
+
+/* Nav tabs */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: var(--azul-marinho) !important;
+    border-bottom: 2px solid var(--azul-marinho) !important;
+    font-weight: 600;
+}
+.nav-tabs > li > a:hover {
+    background-color: var(--azul-hover) !important;
+    color: var(--azul-marinho) !important;
+}
+
+/* Badges */
+.badge { background-color: var(--azul-marinho) !important; }
+
+/* Modal */
+.modal-header {
+    background-color: var(--azul-marinho) !important;
+    color: var(--branco) !important;
+    border-radius: 6px 6px 0 0;
+}
+.modal-header .close { color: var(--branco) !important; opacity: 0.8; }
+.modal-title { color: var(--branco) !important; font-weight: 600; }
+.modal-content { border-radius: 6px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.22) !important; }
+.modal-footer { border-top: 1px solid var(--cinza-transparente) !important; }
