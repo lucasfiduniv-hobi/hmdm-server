@@ -1,5 +1,9 @@
 * {
-    font-size: 14px;
+    font-size: 13px;
+}
+
+body, input, button, select, textarea, label, td, th, a, span, div, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .navbar a {
@@ -94,10 +98,9 @@
 }
 
 .header .hobi-logo {
-    height: 32px;
+    height: 30px;
     width: auto;
-    margin-top: 12px;
-    margin-left: 12px;
+    margin: 0;
     filter: brightness(0) invert(1);
     display: block;
 }
@@ -160,8 +163,9 @@
 }
 
 .hobi-login-logo img {
-    max-width: 180px;
-    max-height: 80px;
+    max-width: 240px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
@@ -202,10 +206,13 @@
 }
 
 .header .logo-text {
-    margin-top: 10px;
     padding-left: 15px;
     color: #afd0df;
     font-size: 20px;
+    display: flex !important;
+    align-items: center;
+    height: 56px;
+    margin-top: 0 !important;
 }
 
 .header .logo-text a, .header .logo-text a:active {
@@ -2613,3 +2620,123 @@ tr:hover {
 .modal-title { color: var(--branco) !important; font-weight: 600; }
 .modal-content { border-radius: 6px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.22) !important; }
 .modal-footer { border-top: 1px solid var(--cinza-transparente) !important; }
+
+/* ===== Navbar Tabs estilo SIGH ===== */
+/* Remove bordas e fundo padrão do Bootstrap tabs */
+.tabset > .nav-tabs,
+.nav-tabs {
+    border-bottom: 2px solid var(--cinza-claro) !important;
+    background-color: var(--branco) !important;
+    padding: 0 8px !important;
+    margin-bottom: 0 !important;
+}
+
+.nav-tabs > li > a,
+.tabset > .nav-tabs > li > a {
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: var(--cinza-escuro) !important;
+    font-weight: 500;
+    padding: 10px 16px !important;
+    margin-bottom: -2px;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-tabs > li > a:hover,
+.tabset > .nav-tabs > li > a:hover {
+    background: transparent !important;
+    border-bottom: 3px solid var(--azul-claro) !important;
+    color: var(--azul-marinho) !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.tabset > .nav-tabs > li.active > a {
+    border: none !important;
+    border-bottom: 3px solid var(--azul-marinho) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: var(--azul-marinho) !important;
+    font-weight: 600;
+}
+
+/* Dropdown dentro do tabset (Ajustes, Funções) */
+.nav-tabs > li.dropdown > a {
+    border-bottom: 3px solid transparent !important;
+}
+.nav-tabs > li.dropdown.active > a,
+.nav-tabs > li.dropdown.open > a {
+    border-bottom: 3px solid var(--azul-marinho) !important;
+    color: var(--azul-marinho) !important;
+    background: transparent !important;
+}
+.nav-tabs .dropdown-menu {
+    border-radius: 0 0 6px 6px !important;
+    border: none !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13) !important;
+    margin-top: 2px;
+}
+.nav-tabs .dropdown-menu > li > a {
+    color: var(--cinza-escuro) !important;
+    font-size: 13px;
+    padding: 8px 16px !important;
+}
+.nav-tabs .dropdown-menu > li > a:hover {
+    background-color: var(--azul-hover) !important;
+    color: var(--azul-marinho) !important;
+}
+
+/* Tab content sem borda */
+.tab-content {
+    background-color: var(--cinza-conteudo) !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* ===== Espaçamento telas internas ===== */
+/* Wrapper principal com espaço do header fixo */
+.content-wrapper.fullscreen {
+    padding-top: 60px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh;
+}
+
+/* Conteúdo de cada tab com padding lateral */
+.tab-content > .tab-pane {
+    padding: 20px 24px !important;
+}
+
+/* Seções de settings/profile/admin com espaço correto */
+.profile, .administration, .settings, .reports {
+    padding-top: 60px !important;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 100% !important;
+}
+
+/* Largura máxima do conteúdo centralizado */
+.width-1000 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+/* Espaço entre seções */
+.form-group {
+    margin-bottom: 14px !important;
+}
+
+/* Título de seção com borda lateral azul (padrão SIGH) */
+h3, h4 {
+    color: var(--cinza-escuro);
+    font-weight: 600;
+    padding-left: 10px;
+    border-left: 3px solid var(--azul-marinho);
+    margin-top: 20px !important;
+    margin-bottom: 12px !important;
+}
