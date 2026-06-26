@@ -137,7 +137,7 @@ body, input, button, select, textarea, label, td, th, a, span, div, p, h1, h2, h
 .hobi-login-bg {
     display: flex;
     min-height: 100vh;
-    background: url('../images/wallpaper.jpg') center center / cover no-repeat;
+    background: url('../images/background_login.png') center center / cover no-repeat;
     justify-content: flex-end;
 }
 
