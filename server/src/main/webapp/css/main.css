@@ -89,8 +89,15 @@
 }
 
 .header {
-    height: 50px;
-    background-color: #7a9ab9;
+    height: 56px;
+    background-color: #1e2957;
+}
+
+.header .hobi-logo {
+    height: 38px;
+    margin-top: 9px;
+    margin-left: 12px;
+    filter: brightness(0) invert(1);
 }
 
 .navbar-nav .expiry-warning {
@@ -121,6 +128,77 @@
     padding-top: 10px;
 }
 
+/* Hobi Login Page */
+.hobi-login-bg {
+    display: flex;
+    min-height: 100vh;
+    background: url('../images/wallpaper.jpg') center center / cover no-repeat;
+    justify-content: flex-end;
+}
+
+.hobi-login-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    min-width: 340px;
+    padding: 40px 30px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+    min-height: 100vh;
+}
+
+.hobi-login-box {
+    width: 100%;
+}
+
+.hobi-login-logo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.hobi-login-logo img {
+    max-width: 180px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.hobi-login-btn {
+    background-color: #1e2957;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.hobi-login-btn:hover,
+.hobi-login-btn:focus {
+    background-color: #101F6B;
+    color: #ffffff;
+}
+
+.hobi-login-btn:disabled {
+    background-color: #7a9ab9;
+    color: #ffffff;
+}
+
+.hobi-login-header-msg {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.hobi-login-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 12px;
+}
+
 .header .logo-text {
     margin-top: 10px;
     padding-left: 15px;
@@ -130,13 +208,13 @@
 
 .header .logo-text a, .header .logo-text a:active {
     text-decoration: none;
-    color: #afd0df !important;
+    color: #9CBBFC !important;
     font-size: 20px !important;
 }
 
 .header .logo-text a:hover {
     text-decoration: none;
-    color: #d0e3eb !important;
+    color: #ffffff !important;
 }
 
 .header a {
@@ -144,7 +222,7 @@
 }
 
 .header .open a, .header .open .dropdown-menu {
-    background-color: #7a9ab9 !important;
+    background-color: #1e2957 !important;
 }
 
 .header .open .dropdown-menu {
@@ -199,7 +277,7 @@
 }
 
 .btn-promo:hover {
-    background-color: #9bb4cc;
+    background-color: #101F6B;
 }
 
 .fullscreen {
@@ -2295,7 +2373,7 @@ div.form-group input.common-checkbox {
 }
 
 .spinner > div {
-    background-color: #6795b4;
+    background-color: #1e2957;
     height: 100%;
     width: 6px;
     display: inline-block;

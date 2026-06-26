@@ -948,11 +948,11 @@ document.localization ['en_US'] = {
     'breadcrumb.config.details': 'Details',
     'breadcrumb.application.versions': 'Versions',
 
-    'app.name': 'Headwind MDM',
-    'app.vendor.name':"h-mdm.com",
-    'app.vendor.link':"https://h-mdm.com",
-    'app.description': 'is an open source mobile device management system',
-    'app.title': '${appName} Web Panel',
+    'app.name': 'Hobi MDM',
+    'app.vendor.name':"Grupo Hobi",
+    'app.vendor.link':"https://grupohobi.com.br",
+    'app.description': 'Sistema de gerenciamento de dispositivos móveis',
+    'app.title': '${appName} - Painel Web',
 
     'box.show.my.apps.only': 'Display my applications only',
     'configuration.app.version.upgrade.message': 'Installed version ${installedVersion}, available version ${latestVersion}',
